@@ -1,14 +1,13 @@
 # url2markdown
 
-This is a very simple web service that will take a given URL, and return
-a Markdown representation of that page.
+This is a very simple web service that will take a given URL, and return a Markdown representation of that page.
 
-Powered by [Readability](http://readability.com/), [Requests](http://python-guide.org/), [html2text](http://www.aaronsw.com/2002/html2text/), and [Flask](http://flask.pocoo.org/).
+Powered by [Mercury Web Parser](https://mercury.postlight.com/web-parser/), [Requests](http://python-guide.org/), [html2text](http://www.aaronsw.com/2002/html2text/), and [Flask](http://flask.pocoo.org/).
 
 ## Usage
 
 
-    $ curl http://url2markdown.herokuapp.com/?url=http://kennethreitz.org
+    $ curl http://url2md.herokuapp.com/?url=http://kennethreitz.org
     
     # Hi, there.
     
@@ -19,11 +18,10 @@ Enjoy!
 
 ## Configuration
 
-This application requires a [Readability Parser Token](http://www.readability.com/developers/api/parser).
+This application requires a [Mercury Web Parser API Token](https://mercury.postlight.com/web-parser/).
 
-    $ export READABILITY_TOKEN=xxxxxx
+    $ export MERCURY_API_TOKEN=xxxxxx
 
-You can use [autoenv](https://github.com/kennethreitz/autoenv) to do this easily.
 
 ## License
 

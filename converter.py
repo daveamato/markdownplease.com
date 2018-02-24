@@ -23,4 +23,4 @@ def meh(url):
 
 
 if __name__ == '__main__':
-    print meh('http://kennethreitz.org/')
+    print meh('http://url2md.herokuapp.com/')
